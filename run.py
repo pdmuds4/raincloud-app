@@ -7,7 +7,7 @@ from scripts.inference import predict
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://raincloud-app.vercel.app/"],
+    allow_origins=["https://raincloud-app.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
