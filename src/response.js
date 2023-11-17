@@ -4,7 +4,7 @@ import axios from "axios";
 //const Domain = "http://127.0.0.1:3001";
 
 // docker用
-const Domain = "http://0.0.0.0:3001";
+const Domain = "https://ai-design-raincloud-backend.onrender.com";
 
 // get methodでのレスポンスを返す関数
 function getResponse(endpoint){
