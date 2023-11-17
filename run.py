@@ -22,7 +22,7 @@ async def index():
 @app.post("/predict")
 async def upload_file(file: UploadFile = File(...)):
     # アップロードされたファイルを指定のディレクトリに保存するパスを指定
-    input_image_path = os.path.join(UPLOAD_DIR, file.filename)
+    input_image_path = os.path.join(UPLOAD_DIR, "input_image.jpg")
     
     # アップロードされたファイルを指定したパスに保存
     with open(input_image_path, "wb") as buffer:
